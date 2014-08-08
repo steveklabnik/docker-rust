@@ -1,0 +1,7 @@
+env:
+  global:
+    - secure: UQuxVTjm101F2JozFI1OmNZhSju4bfTnVwHirFpSYxxuTIPjI54JPfMXfzkyNTe8wbCjKQoZg1AnM1k6Z+LEUDNTtVCbS/EYcL7LGw03ri6jLu7rxT6oPCSOg/vxNMByJm7NqI6rZtUixNV8tws7xTiYpglMYi3pJ4CWtj4iEyo=
+before_install: true
+install: true
+script:
+  - curl --data "build=true" -X POST $DOCKER_TRIGGER
